@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using System.Collections.Generic;
 
 namespace Lab10
 {
@@ -74,6 +73,5 @@ namespace Lab10
             }
             return str.ToString();
         }
-
     }
 }

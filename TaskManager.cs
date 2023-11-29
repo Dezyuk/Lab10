@@ -3,7 +3,7 @@ using static Lab10.SortParts;
 
 namespace Lab10
 {
-    internal class Manager
+    internal class TaskManager 
     {
         /// <summary>
         /// Создание потоков и генерация объектов в нескольких потоках
@@ -122,7 +122,7 @@ namespace Lab10
                 if (nonEmptyChunks.Count > 0)
                 {
                     var minItems = nonEmptyChunks.Select(chunk => chunk.WarehouseList.First()).ToList();
-                    var minItem = minItems.Min();
+                    var minItem = minItems[0];
 
                     foreach (var chunk in nonEmptyChunks)
                     {
@@ -137,5 +137,6 @@ namespace Lab10
             }
             return result;
         }
+
     }
 }
